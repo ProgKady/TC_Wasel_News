@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="700.0" prefWidth="1000.0" style="-fx-font-family: &quot;Cairo SemiBold&quot;;" stylesheets="@cupertino-light.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main_WindowController">
+   <center>
+      <JFXTabPane BorderPane.alignment="CENTER">
+         <tabs>
+            <Tab text="الأخبار">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="665.0" prefWidth="1000.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="1026.0" spacing="20.0">
+                           <children>
+                              <JFXTextField fx:id="date" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="640.0" promptText="التاريخ" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" />
+                              <JFXTextField fx:id="title" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="640.0" promptText="أكتب العنوان هنا " style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" />
+                           </children>
+                        </HBox>
+                        <JFXTextArea fx:id="message" prefHeight="209.0" prefWidth="987.0" promptText="أكتب النص او الرسالة هنا " style="-fx-font-weight: bold;" />
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="536.0" prefHeight="40.0" prefWidth="1026.0" spacing="20.0">
+                           <children>
+                              <JFXTextField fx:id="imgname" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="285.0" promptText="اسم الصورة" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" text="News.jpg" />
+                              <JFXTextField fx:id="user" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="200.0" promptText="اسم المستخدم" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" text="tcrecruitment2025" />
+                              <JFXTextField fx:id="repo" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="200.0" promptText="اسم الريبو" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" text="tcprojects" />
+                              <JFXTextField fx:id="branch" labelFloat="true" maxWidth="300.0" prefHeight="32.0" prefWidth="200.0" promptText="اسم الفرع" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" text="main" />
+                              <JFXTextField fx:id="folder" labelFloat="true" layoutX="796.0" layoutY="13.0" maxWidth="300.0" prefHeight="32.0" prefWidth="200.0" promptText="اسم الفولدر" style="-fx-font-size: 14; -fx-font-weight: bold; -fx-background-radius: 0.7em; -jfx-unfocus-color: transparent; -jfx-focus-color: transparent;" text="images" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="30.0" prefHeight="58.0" prefWidth="1026.0" spacing="20.0">
+                           <children>
+                              <JFXButton onAction="#addaction" prefHeight="32.0" prefWidth="70.0" style="-fx-font-weight: bold; -fx-background-color: #007aff; -fx-background-radius: 3em; -fx-text-fill: white;" text="Add" />
+                           </children>
+                        </HBox>
+                        <JFXTextArea fx:id="fullmode" layoutX="30.0" layoutY="85.0" prefHeight="280.0" prefWidth="1026.0" promptText="كل حاجة هتظهر هنا ..." style="-fx-font-weight: bold;" />
+                        <HBox alignment="CENTER" layoutX="30.0" layoutY="364.0" prefHeight="51.0" prefWidth="1026.0" spacing="20.0">
+                           <children>
+                              <JFXButton onAction="#copyaction" prefHeight="32.0" prefWidth="70.0" style="-fx-font-weight: bold; -fx-background-radius: 3em; -fx-background-color: #007aff; -fx-text-fill: white;" text="Copy" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab text="مولد الأكواد">
+               <content>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <JFXButton onAction="#generateaction" prefHeight="32.0" prefWidth="164.0" style="-fx-font-weight: bold; -fx-background-color: #007aff; -fx-background-radius: 3em; -fx-text-fill: white;" text="Code Generator" BorderPane.alignment="CENTER" />
+                     </center></BorderPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </center>
+</BorderPane>

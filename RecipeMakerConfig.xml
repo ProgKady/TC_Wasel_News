@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Ahmed.ElKady\Documents\NetBeansProjects\TC Wasel_News\dist\TC_Wasel_News.jar</jar>
+  <outfile>C:\Users\Ahmed.ElKady\Documents\NetBeansProjects\TC Wasel_News\dist\TC Wasel.exe</outfile>
+  <errTitle>Java Not Found - Kadysoft Ltd</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>Call Me At : +201555266002</supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Ahmed.ElKady\Documents\NetBeansProjects\TC Wasel_News\hrrr.ico</icon>
+  <classPath>
+    <mainClass>Main</mainClass>
+    <cp>Java/lib/jfoenix.jar</cp>
+  </classPath>
+  <jre>
+    <path>Java</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>jdkOnly</jdkPreference>
+    <runtimeBits>64</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>1.0.0.ks</txtFileVersion>
+    <fileDescription>TC Wasel for making data files for TC Wasel mobile application</fileDescription>
+    <copyright>All Rights Reserved @ Kadysoft Ltd. 2017 - 2026</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>1.0.0.ks</txtProductVersion>
+    <productName>TC Wasel</productName>
+    <companyName>Kadysoft Ltd</companyName>
+    <internalName>TC Wasel</internalName>
+    <originalFilename>TC Wasel.exe</originalFilename>
+    <trademarks>Kadysoft Ltd.</trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
